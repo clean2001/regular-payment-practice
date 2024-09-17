@@ -70,7 +70,7 @@ export default {
       try {
         // 결제 요청
         // 포트원 빌링키 결제 API 호출
-        const paymentResponse = await axios.post(`${process.env.SERVER_BASE_URL}/kakaopay`, {
+        const paymentResponse = await axios.post(`${process.env.VUE_APP_API_SERVER_BASE_URL}/kakaopay`, {
           billingKey: billingKey,
         }, {
           headers: {
