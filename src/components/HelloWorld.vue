@@ -25,8 +25,8 @@ export default {
   methods: {
     async addPaymentMethod() {
       console.log(`${process.env.VUE_APP_API_BASE_URL}/payment-done`);
-      console.log(`${process.env.PORTONE_CHANNEL_KEY}`);
-      console.log(`${process.env.PORTONE_STORE_ID}`);
+      console.log(`${process.env.VUE_APP_API_PORTONE_CHANNEL_KEY}`);
+      console.log(`${process.env.VUE_APP_API_PORTONE_STORE_ID}`);
       try {
         const res = await PortOne.requestIssueBillingKey({
           storeId: `${process.env.PORTONE_STORE_ID}`, // 고객사 storeId로 변경해주세요.
