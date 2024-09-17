@@ -29,8 +29,8 @@ export default {
       console.log(`${process.env.VUE_APP_API_PORTONE_STORE_ID}`);
       try {
         const res = await PortOne.requestIssueBillingKey({
-          storeId: `${process.env.PORTONE_STORE_ID}`, // 고객사 storeId로 변경해주세요.
-          channelKey: `${process.env.PORTONE_CHANNEL_KEY}`, // 콘솔 결제 연동 화면에서 채널 연동 시 생성된 채널 키를 입력해주세요.
+          storeId: `${process.env.VUE_APP_API_PORTONE_STORE_ID}`, // 고객사 storeId로 변경해주세요.
+          channelKey: `${process.env.VUE_APP_API_PORTONE_CHANNEL_KEY}`, // 콘솔 결제 연동 화면에서 채널 연동 시 생성된 채널 키를 입력해주세요.
           billingKeyMethod: "EASY_PAY",
           issueId: "test-issueId",
           issueName: "동상이농 카드 등록",
