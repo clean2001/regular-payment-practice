@@ -87,7 +87,7 @@ export default {
 
       } catch(e) {
         console.log(paymentResponse);
-        console.log("line 106 실패!!!");
+        console.log("line 106 실패!!");
         console.log(e);
       }
     }
